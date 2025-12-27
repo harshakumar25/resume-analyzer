@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Resume Analyzer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Resume Analyzer</h1>
+    <p>Upload your resume, compare it with a job description, and get improvement suggestions.</p>
+
+    <br>
+    <br>
+     <br>
+
+    <form id="resumeForm">
+      <input type="file" id="resumeInput" accept=".pdf,.doc,.docx" required>
+
+      <textarea id="jobDescription" placeholder=" -  -- - - -Paste the job description here like    -  - - ( looking for ..role .. with .... skills ) " required></textarea>
+      <button type="submit">Analyze Resume</button>
+    </form>
+    <div id="output" class="output"></div>
+    <div id="suggestions" class="output"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+:root {
+  --bg-main: #2a2a2c;
+  --bg-card: #3b4155;
+  --bg-light: #202022;
+  --accent: #983232;
+  --accent-hover: #2e3978;
+  --text: #c5aeae;
+  --border: #444;
+  --radius: 8px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--bg-main);
+  color: var(--text);
+}
+
+/* Layout */
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 25px;
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  padding: 12px;
+  background: var(--accent);
+  border-radius: var(--radius);
+  transition: 0.3s;
+}
+
+h1:hover {
+  background: var(--accent-hover);
+}
+
+/* Text */
+p {
+  background: var(--bg-light);
+  padding: 10px;
+  border-radius: var(--radius);
+  text-align: center;
+}
+
+/* Form */
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  font-size: 1rem;
+}
+
+/* Inputs */
+input,
+textarea {
+  background: #fff;
+  color: #333;
+}
+
+textarea {
+  resize: none;
+  height: 150px;
+}
+
+/* Button */
+button {
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: var(--accent);
+}
+
+/* Output boxes */
+#output,
+#suggestions {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f1f1f1;
+  color: #333;
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  textarea {
+    height: 120px;
+  }
+}
